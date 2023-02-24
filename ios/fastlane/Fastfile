@@ -1,0 +1,68 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+update_fastlane
+
+default_platform(:ios)
+
+ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "jwzc-ucvq-rvwi-sevz"
+ENV["FLAVOR"] = "farmaciestilo"
+
+platform :ios do
+
+  desc "Recupera/Genera i certificati"
+  lane :refresh_match do |options|
+    register_devices(
+      devices: {
+        "iPhone di Gabor" => "3b80801b42b95de0e6169a1cbaeb9c5c64ba11fd",
+      }
+    )
+    register_devices(
+      devices: {
+        "MacBook Pro di Gabor" => "00008103-0016519E0E62001E",
+      },
+      platform: "mac"
+    )
+    match(
+      type: "development",
+      git_branch: ENV["FLAVOR"],
+      readonly: false
+    )
+    match(
+      type: "appstore",
+      git_branch: ENV["FLAVOR"],
+      readonly: false
+    )
+  end
+
+  desc "Upload su Store"
+  lane :upload do |options|
+    # build_app(
+    #   skip_build_archive: true,
+    #   output_directory: "../build/ios/archive/",
+    #   archive_path: "../build/ios/archive/Runner.xcarchive",
+    # )
+    upload_to_app_store(
+      ipa: "../build/ios/ipa/" + ENV["FLAVOR"] + ".ipa",
+      team_id: CredentialsManager::AppfileConfig.try_fetch_value(:itc_team_id),
+      itc_provider: CredentialsManager::AppfileConfig.try_fetch_value(:team_id),
+      skip_screenshots: true,
+      skip_metadata: true,
+      force: true,
+      # overwrite_screenshots: true,
+      submit_for_review: false, # da mettere true
+      verify_only: false,
+      automatic_release: true,
+    )
+  end
+end

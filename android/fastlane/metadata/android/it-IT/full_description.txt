@@ -1,0 +1,9 @@
+Pharma Punto è l'applicazione che permette alle farmacie di avere una app a proprio brand per sfruttare al massimo le potenzialità del digitale: mantenere e fidelizzare il rapporto con la clientela, gestire efficaci e mirate campagne promozionali, permettere alla propria clientela la prenotazione e l'ordine di farmaci e prodotti in maniera facile e direttamente da casa, con pagamento in-app e spedizione semplificata della ricetta, sia cartacea che elettronica, con ritiro programmato in farmacia o con delivery a domicilio. 
+
+Inoltre l'applicazione risponde alle esigenze del farmacista per la semplificazione del lavoro di gestione della prenotazione di servizi, test, analisi e noleggi, con gestione automatizzata di calendari e slot di disponibilità.
+
+Una sezione dell'app permette di promuovere efficacemente le giornate di prevenzione e altre iniziative realizzate in farmacia, con la possibilità di raccogliere le adesioni direttamente in app e di offrire coupon sconto e promozioni mirate.
+
+L'applicazione è sviluppata da Contacta Pharmacy, che offre un ecosistema digitale completo di soluzioni verticali per il mondo della farmacia, ed è fornita in white-label: sugli store ci sarà l'applicazione della tua farmacia, con il tuo brand.
+
+L'applicazione inoltre è fornita di multiutenza, per facilitare una gestione più efficace e snella nelle farmacie più strutturate, dove i farmacisti dei vari reparti potranno avere un filo diretto con la propria clientela, lasciando al management della farmacia la supervisione del lavoro dell'intero team.

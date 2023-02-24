@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "182864309156",
+    "project_id": "farmacie-stilo-297d8",
+    "storage_bucket": "farmacie-stilo-297d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182864309156:android:aa8306dd4d856a87f92f31",
+        "android_client_info": {
+          "package_name": "com.contactapharmacy.farmaciestilo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182864309156-j4nav1e9l71kcdqht5jhut053lumjhcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHxjbh0mE4wz9NzmvvbnJ0qPpOwHbwo5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182864309156-j4nav1e9l71kcdqht5jhut053lumjhcr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "182864309156-0quup4lskc8rh2v70hagumh7akashqhj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.contactapharmacy.farmaciestilo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
